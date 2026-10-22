@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meal Tracker support</title>
+  <meta name="description" content="Help and contact for Meal Tracker, the app that tracks the calories and sugar in your meals.">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <img src="icon-180.png" alt="">
+        <span>Meal Tracker</span>
+      </a>
+      <p>Tracks the calories and sugar in what you eat. Add a meal from a photo, a barcode or by typing it in, and see each day against your goals.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="contact">
+      <h2>Get help</h2>
+      <p>Email <a href="mailto:sy@sycheng.com?subject=Meal%20Tracker">sy@sycheng.com</a>. Say which phone you use and what happened, and include a screenshot if you can.</p>
+    </section>
+
+    <h1>Questions</h1>
+
+    <h2>How do photo estimates work?</h2>
+    <p>The app sends the photo, or the food you describe, to Google Gemini, which lists the foods it sees with their calories and sugar. You check and correct the list before saving. This needs a free Gemini API key: in Settings, tap Get API key, sign in to Google AI Studio, create a key and come back to the app. The key is stored encrypted on your phone.</p>
+
+    <h2>Why don't photo estimates work for me?</h2>
+    <p>Google offers the Gemini API only in some countries and regions. Elsewhere, Google refuses the request and the app says so. Check the <a href="https://ai.google.dev/gemini-api/docs/available-regions">list of supported countries and regions</a>. Barcode lookup and typing meals in work everywhere, with or without a key. If you are in a supported country, use Test key in Settings to check the key.</p>
+
+    <h2>Where do barcode results come from?</h2>
+    <p>From <a href="https://world.openfoodfacts.org">Open Food Facts</a>, a free database of packaged foods built by volunteers. If a product isn't there, or its values look wrong, type the item in yourself.</p>
+
+    <h2>How accurate are the numbers?</h2>
+    <p>They are estimates. Portion sizes in photos are hard to judge, and product data can contain mistakes. Edit any item before or after saving. Meal Tracker is not a medical device and does not give medical advice.</p>
+
+    <h2>Where are my meals stored?</h2>
+    <p>Only on your phone. There is no account and no copy anywhere else. If you delete the app, or lose the phone, the meals go with it. To keep a copy, use Export CSV in Settings, under "Your data". Import CSV brings the meals back, and skips meals that are already in the app.</p>
+
+    <h2>Can I change my goals?</h2>
+    <p>Yes. Set your daily calorie goal and sugar limit in Settings. The default sugar limit is 25 g, in line with the WHO's advice on free sugars.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </footer>
+</body>
+</html>
