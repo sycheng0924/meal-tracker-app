@@ -24,15 +24,23 @@
 
   <main class="wrap">
     <h1>Privacy policy</h1>
-    <p class="meta">Effective 22 October 2026. Applies to the Meal Tracker app for iPhone and Android.</p>
+    <p class="meta">Effective 27 October 2026. Applies to the Meal Tracker app for iPhone and Android.</p>
 
-    <p>In short: your meals stay on your phone. The app has no accounts, no analytics, no advertising and no tracking, and we do not receive any of your data. Photos you choose to analyse go to Google Gemini, using your own API key.</p>
+    <p>In short: your meals stay on your phone. The app has no accounts, no analytics, no advertising and no tracking, and we do not receive any of your data. Only if you allow it, photos and food descriptions you ask to estimate are sent to Google Gemini, an AI service run by Google LLC, using your own API key.</p>
 
     <h2>What the app stores</h2>
     <p>The meals you record (type, date and time, note, and each food's name, amount, calories and sugar), a small thumbnail of any meal photo, your goals, and your Gemini API key. All of it is saved only on your device, in the app's own storage; the key is kept encrypted in the system's secure storage. None of it is sent to us.</p>
 
     <h2>Photo and description estimates (Google Gemini)</h2>
-    <p>When you ask for an estimate, the app sends the photo, or the text you typed, to Google's Gemini API (generativelanguage.googleapis.com) with your own API key, and receives the list of foods back. Nothing else is sent: not your other meals, not your goals. The request is made under your Google account's key, so Google's <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and <a href="https://policies.google.com/privacy">privacy policy</a> apply to it. The first time, the app asks your permission before sending anything; if you don't allow it, or don't add a key, the app never contacts Gemini.</p>
+    <p>The app can estimate a meal's calories and sugar with Gemini, an AI service run by Google LLC. This is optional; barcode lookup and typing meals in yourself work without it.</p>
+    <ul>
+      <li><strong>What is sent:</strong> the meal photo, when you ask for a photo estimate; the food name and amount you typed, when you tap Estimate; and your Gemini API key, which Google needs to accept the request. Nothing else is sent: not your other meals, history or goals.</li>
+      <li><strong>Who receives it:</strong> only Google LLC, through the Gemini API (generativelanguage.googleapis.com). It goes directly from your phone to Google over an encrypted (HTTPS) connection. We, the developer, never receive it.</li>
+      <li><strong>How it is collected:</strong> only when you tap a button that asks for an estimate, and only after you have allowed it. Before anything is first sent, the app shows what will be sent and to whom, and asks your permission. If you don't allow it, or don't add a key, the app never contacts Gemini.</li>
+      <li><strong>How it is used:</strong> Google uses it to identify the foods and return the estimate, which the app shows you to check and edit. Google handles it under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. With a free API key, Google may keep what is sent, use it to improve its products, and have people review it, so leave faces and private details out of meal photos. We don't use it for anything.</li>
+      <li><strong>Protection:</strong> Google is the only third party that receives this data, and its terms and privacy policy protect it to the same or a higher standard than this policy: it is transferred encrypted and Google does not sell it.</li>
+      <li><strong>Turning it off:</strong> switch off "Share with Google Gemini" in the app's Settings at any time. The app then sends nothing to Google and asks again before any later estimate.</li>
+    </ul>
 
     <h2>Barcode lookup (Open Food Facts)</h2>
     <p>When you scan a barcode, the app asks <a href="https://world.openfoodfacts.org">Open Food Facts</a> for that product's nutrition values. The request contains only the barcode number.</p>
